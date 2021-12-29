@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+    <style>
+     .accordion > div > span {
+	background-color: #eee;
+	display: block;
+	width: 100%;
+	cursor: pointer;
+	padding: 15px;
+}
+
+.accordion > div > span:after {
+	content: "\002b";
+	float: right;
+}
+
+.accordion > div.show > span:after {
+	content: "\2212";
+}
+
+.accordion > div > span:hover,
+.accordion > div.show > span {
+	background-color: #ccc;
+}
+
+.accordion > div > div {
+  border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	padding:0 15px;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5s ;
+}
+
+.accordion > div.show > div {
+  	
+  padding: 15px;
+  max-height: 300px;
+  background-color: rgba(0, 195, 255, 0.123);
+  
+}
+    </style>
+    <title>avardiyon</title>
+    <div class="container">
+      <div class="m-3">
+  
+        <h1 id="header">DOM</h1>
+  
+        <div class="content">
+          <p>My first paragraph!</p>
+          <ul>
+            <li>Javascript</li>
+            <li>Python</li>
+            <li>Rust</li>
+            <li>Vue.JS</li>
+          </ul>
+          <p>My second paragraph!</p>
+        </div>
+  
+        <div class="content">
+          <div class="accordion">
+            <div class="show"> <!-- wrapper -->
+              <span>My first Accordion Element!</span>
+              <div>Swine burgdoggen ball tip t-bone biltong filet mignon tri-tip venison chislic pork loin.  chislic cow salami, sirloin pork loin kielbasa burgdoggen frankfurter pork belly. Pork belly short ribs jowl capicola biltong buffalo turkey.</div>
+            </div>
+            <div class=""> <!-- wrapper -->
+              <span>My second Accordion Element!</span>
+              <div>Pork loin leberkas jowl short ribs, chuck strip steak pork belly corned beef kielbasa sirloin</a> drumstick venison tenderloin kevin ribeye. </div>
+            </div>
+            <div> <!-- wrapper -->
+              <span>My 3th Accordion Element!</span>
+              <div>Shankle prosciutto short ribs chuck pork belly. Spare ribs flank short ribs shoulder salami. Shankle rump sausage, picanha prosciutto frankfurter jerky ham hamburger jowl turducken venison chislic. Strip steak  ground round ball tip tongue alcatra spare ribs pork ham hock pancetta bacon ribeye shankle.</div>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+
+    <script src="accordion.js"></script>
+ 
+     
+    </script>
+</body>
+</html>
